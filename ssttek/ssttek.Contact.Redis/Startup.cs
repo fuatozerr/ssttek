@@ -12,6 +12,7 @@ using ssttek.Contact.Redis.Settings;
 using ssttek.DataAccess;
 using ssttek.Infrastructure.Abstract;
 using ssttek.Infrastructure.Concrete;
+using ssttek.Shared.Extensions;
 using ssttrek.Business.Abstract;
 using ssttrek.Business.Concrete;
 using System;
@@ -58,7 +59,7 @@ namespace ssttek.Contact.Redis
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ssttek.Contact.Redis v1"));
             }
-
+            app.ConfigureExceptionHandling(env.IsDevelopment());
             app.UseHttpsRedirection();
 
             app.UseRouting();
