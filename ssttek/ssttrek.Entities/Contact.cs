@@ -1,8 +1,7 @@
-﻿namespace ssttek.Contact.Redis.Dtos
+﻿namespace ssttrek.Entities
 {
-    public class Contact
+    public class Contact: BaseEntity
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string LastName { get; set; }
         public string Firm { get; set; }

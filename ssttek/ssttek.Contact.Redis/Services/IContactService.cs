@@ -1,9 +1,10 @@
-﻿using System.Threading.Tasks;
+﻿using ssttek.Shared.Dto;
+using System.Threading.Tasks;
 
 namespace ssttek.Contact.Redis.Services
 {
     public interface IContactService
     {
-        Task<Contact> GetContact(int id);
+        Task<Response<ssttrek.Entities.Contact>> GetContactById(string userId);
     }
 }
