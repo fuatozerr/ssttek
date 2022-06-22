@@ -2,12 +2,18 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using ssttek.Contact.Redis.Settings;
+using ssttek.DataAccess;
+using ssttek.Infrastructure.Abstract;
+using ssttek.Infrastructure.Concrete;
+using ssttrek.Business.Abstract;
+using ssttrek.Business.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,12 +33,20 @@ namespace ssttek.Contact.Redis
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<RedisSettings>(Configuration.GetSection("RedisSettings"));
+          //  services.Configure<RedisSettings>(Configuration.GetSection("RedisSettings"));
             services.AddControllers();
+            services.AddDbContextPool<SsttekContext>(option => option.UseSqlServer(Configuration.GetConnectionString("SsttekContextConnectionString")));
+            services.AddScoped<IContactRepository, ContactRepository>();
+            services.AddScoped<IContactService, ContactService>();
+            services.AddEntityFrameworkSqlServer();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ssttek.Contact.Redis", Version = "v1" });
             });
+
+          
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

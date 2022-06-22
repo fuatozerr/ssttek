@@ -11,6 +11,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Shared\ssttek.Shared\ssttek.Shared.csproj" />
+    <ProjectReference Include="..\ssttek.Infrastructure\ssttek.Infrastructure.csproj" />
+    <ProjectReference Include="..\ssttrek.Business\ssttrek.Business.csproj" />
     <ProjectReference Include="..\ssttrek.Entities\ssttrek.Entities.csproj" />
   </ItemGroup>
 

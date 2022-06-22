@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ssttrek.Entities", "ssttrek
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ssttek.Infrastructure", "ssttek.Infrastructure\ssttek.Infrastructure.csproj", "{138EA6DF-4E50-4731-BF19-37051D2A02E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ssttrek.Business", "ssttrek.Business\ssttrek.Business.csproj", "{925CFB2E-3C37-475D-8422-F5A611CBCBEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{138EA6DF-4E50-4731-BF19-37051D2A02E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{138EA6DF-4E50-4731-BF19-37051D2A02E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{138EA6DF-4E50-4731-BF19-37051D2A02E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{925CFB2E-3C37-475D-8422-F5A611CBCBEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{925CFB2E-3C37-475D-8422-F5A611CBCBEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{925CFB2E-3C37-475D-8422-F5A611CBCBEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{925CFB2E-3C37-475D-8422-F5A611CBCBEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
