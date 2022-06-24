@@ -9,7 +9,7 @@
           "Port": 25794
         }
       ],
-      "UpstreamPathTemplate": "/services/contact/{everything}",
+      "UpstreamPathTemplate": "/services/{everything}",
       "UpstreamHttpMethod": [ "Get", "post", "put", "Delete" ],
       "UpstreamScheme": "http"
 
