@@ -15,11 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ssttek.Infrastructure", "ss
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ssttrek.Business", "ssttrek.Business\ssttrek.Business.csproj", "{925CFB2E-3C37-475D-8422-F5A611CBCBEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ssttek.ContactService.Worker", "ssttek.ContactService\ssttek.ContactService.Worker.csproj", "{5D13DABE-72FE-47A1-8DCC-03B47FD678AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ssttek.ContactService.Worker", "ssttek.ContactService\ssttek.ContactService.Worker.csproj", "{5D13DABE-72FE-47A1-8DCC-03B47FD678AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ssttek.Find.IP", "ssttek.Find.IP\ssttek.Find.IP.csproj", "{8ED348BB-4290-48B6-A792-71DCC6B9FD68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ssttek.Find.IP", "ssttek.Find.IP\ssttek.Find.IP.csproj", "{8ED348BB-4290-48B6-A792-71DCC6B9FD68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ssttek.Test", "ssttek.Test\ssttek.Test.csproj", "{0580F309-A938-40D6-A95B-CFB2D453399E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ssttek.Test", "ssttek.Test\ssttek.Test.csproj", "{0580F309-A938-40D6-A95B-CFB2D453399E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ssttek.ApiGateWay", "ssttek.ApiGateWay\ssttek.ApiGateWay.csproj", "{3B3FA3A9-14A4-4875-997B-94E43AB29A99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{0580F309-A938-40D6-A95B-CFB2D453399E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0580F309-A938-40D6-A95B-CFB2D453399E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0580F309-A938-40D6-A95B-CFB2D453399E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B3FA3A9-14A4-4875-997B-94E43AB29A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B3FA3A9-14A4-4875-997B-94E43AB29A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B3FA3A9-14A4-4875-997B-94E43AB29A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B3FA3A9-14A4-4875-997B-94E43AB29A99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
