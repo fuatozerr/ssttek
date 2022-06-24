@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ssttek.Infrastructure.Abstract
 {
-    public interface IContactRepository : IGenericRepository<Contact>
+    public interface IContactRepository : IGenericRepository<ContactModel>
     {
     }
 }

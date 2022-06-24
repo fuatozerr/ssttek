@@ -90,13 +90,13 @@ namespace ssttek.Infrastructure.Concrete
             return dbContext.SaveChangesAsync();
         }
 
-        public virtual Task<int> DeleteAsync(Guid id)
+        public virtual Task<int> DeleteAsync(int id)
         {
             var entity = this.entity.Find(id);
             return DeleteAsync(entity);
         }
 
-        public virtual int Delete(Guid id)
+        public virtual int Delete(int id)
         {
             var entity = this.entity.Find(id);
             return Delete(entity);
@@ -206,7 +206,7 @@ namespace ssttek.Infrastructure.Concrete
             return await entity.ToListAsync();
         }
 
-        public virtual async Task<TEntity> GetByIdAsync(Guid id, bool noTracking = true, params Expression<Func<TEntity, object>>[] includes)
+        public virtual async Task<TEntity> GetByIdAsync(int id, bool noTracking = true, params Expression<Func<TEntity, object>>[] includes)
         {
             TEntity found = await entity.FindAsync(id);
 

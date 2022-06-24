@@ -9,10 +9,10 @@ namespace ssttrek.Business.Abstract
 {
     public interface IContactService
     {
-        Task<List<Contact>> GetAllContacts();
-        Task<Contact> GetContact(int id);
-        Task<Contact> CreateContact(Contact contact);
-        Task<Contact> UpdateContact(Contact contact); 
+        Task<List<ContactModel>> GetAllContacts();
+        Task<ContactModel> GetContact(int id);
+        Task<int> CreateContact(ContactModel contact);
+        Task<int> UpdateContact(ContactModel contact);
         void DeleteContact(int id);
     }
 }

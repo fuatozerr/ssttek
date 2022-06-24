@@ -18,30 +18,36 @@ namespace ssttrek.Business.Concrete
             _contactRepository = contactRepository;
         }
 
-        public Task<Contact> CreateContact(Contact contact)
+        public async Task<int> CreateContact(ContactModel contact)
         {
-            throw new NotImplementedException();
+            var result = await _contactRepository.AddAsync(contact);
+            return result;
+            
         }
 
         public void DeleteContact(int id)
         {
-            throw new NotImplementedException();
+            _contactRepository.Delete(id);
         }
 
-        public async Task<List<Contact>> GetAllContacts()
+        public async Task<List<ContactModel>> GetAllContacts()
         {
             var result = await _contactRepository.GetAll();
             return result;
         }
 
-        public Task<Contact> GetContact(int id)
+        public async Task<ContactModel> GetContact(int id)
         {
-            throw new NotImplementedException();
+            var result = await _contactRepository.GetByIdAsync(id);
+            return result;
         }
 
-        public Task<Contact> UpdateContact(Contact contact)
+        public async Task<int> UpdateContact(ContactModel contact)
         {
-            throw new NotImplementedException();
+            var result = await _contactRepository.UpdateAsync(contact);
+
+            return result;
+
         }
     }
 }

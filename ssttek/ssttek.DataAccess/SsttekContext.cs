@@ -29,6 +29,6 @@ namespace ssttek.DataAccess
            
             optionsBuilder.UseSqlServer(connStr);  */
         }
-        public DbSet<Contact> Contacts { get; set; }
+        public DbSet<ContactModel> Contacts { get; set; }
     }
 }

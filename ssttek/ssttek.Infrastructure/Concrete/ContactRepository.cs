@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ssttek.Infrastructure.Concrete
 {
-    public class ContactRepository : GenericRepository<Contact>, IContactRepository
+    public class ContactRepository : GenericRepository<ContactModel>, IContactRepository
     {
         public ContactRepository(SsttekContext dbContext) : base(dbContext)
         {

@@ -22,8 +22,8 @@ namespace ssttek.Infrastructure.Abstract
 
         Task<int> DeleteAsync(TEntity entity);
         int Delete(TEntity entity);
-        Task<int> DeleteAsync(Guid id);
-        int Delete(Guid id);
+        Task<int> DeleteAsync(int id);
+        int Delete(int id);
         bool DeleteRange(Expression<Func<TEntity, bool>> predicate);
         Task<bool> DeleteRangeAsync(Expression<Func<TEntity, bool>> predicate);
 
@@ -39,7 +39,7 @@ namespace ssttek.Infrastructure.Abstract
 
         Task<List<TEntity>> GetList(Expression<Func<TEntity, bool>> predicate, bool noTracking = true, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, params Expression<Func<TEntity, object>>[] includes);
 
-        Task<TEntity> GetByIdAsync(Guid id, bool noTracking = true, params Expression<Func<TEntity, object>>[] includes);
+        Task<TEntity> GetByIdAsync(int id, bool noTracking = true, params Expression<Func<TEntity, object>>[] includes);
 
         Task<TEntity> GetSingleAsync(Expression<Func<TEntity, bool>> predicate, bool noTracking = true, params Expression<Func<TEntity, object>>[] includes);
 

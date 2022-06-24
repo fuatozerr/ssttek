@@ -1,6 +1,6 @@
 ﻿namespace ssttrek.Entities
 {
-    public class Contact: BaseEntity
+    public class ContactModel: BaseEntity
     {
         public string Name { get; set; }
         public string LastName { get; set; }
