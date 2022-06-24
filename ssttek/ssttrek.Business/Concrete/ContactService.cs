@@ -1,4 +1,5 @@
 ﻿using ssttek.Infrastructure.Abstract;
+using ssttek.Infrastructure.Queue;
 using ssttrek.Business.Abstract;
 using ssttrek.Entities;
 using System;
@@ -27,7 +28,16 @@ namespace ssttrek.Business.Concrete
 
         public void DeleteContact(int id)
         {
-            _contactRepository.Delete(id);
+            QueueFactory.SendMessageToExchange(exchangeName: SsttekConstants.ContactDeletingName,
+                exchangeType: SsttekConstants.DefaultExchangeType,
+                queueName: SsttekConstants.ContactDeletingQueueName,
+                obj: new ContactModel()
+                {
+                    Id = id,
+                    
+                });
+
+            //_contactRepository.Delete(id);
         }
 
         public async Task<List<ContactModel>> GetAllContacts()
