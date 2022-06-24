@@ -10,6 +10,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0" />
     <PackageReference Include=" Microsoft.EntityFrameworkCore.Design" Version="5.0.0" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.2.4" />
+
 
   </ItemGroup>
 
