@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>dotnet-ssttek.ContactService-59AF53F9-80F8-4957-8A5E-0DAF61AE3C42</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.1.7" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.1.7" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ssttek.DataAccess\ssttek.DataAccess.csproj" />
+  </ItemGroup>
+</Project>

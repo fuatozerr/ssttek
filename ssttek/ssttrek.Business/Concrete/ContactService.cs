@@ -31,7 +31,7 @@ namespace ssttrek.Business.Concrete
             QueueFactory.SendMessageToExchange(exchangeName: SsttekConstants.ContactDeletingName,
                 exchangeType: SsttekConstants.DefaultExchangeType,
                 queueName: SsttekConstants.ContactDeletingQueueName,
-                obj: new ContactModel()
+                obj: new //obje adi da verebilirdim. 
                 {
                     Id = id,
                     

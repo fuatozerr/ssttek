@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ssttek.Contact", "ssttek.Contact.Redis\ssttek.Contact.csproj", "{90E06623-7446-43B5-941F-5012880110F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ssttek.Contact.API", "ssttek.Contact.Redis\ssttek.Contact.API.csproj", "{90E06623-7446-43B5-941F-5012880110F7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ssttek.Shared", "Shared\ssttek.Shared\ssttek.Shared.csproj", "{1DF1F527-3B40-449A-85D4-CE723F8323C1}"
 EndProject
@@ -14,6 +14,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ssttek.Infrastructure", "ssttek.Infrastructure\ssttek.Infrastructure.csproj", "{138EA6DF-4E50-4731-BF19-37051D2A02E1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ssttrek.Business", "ssttrek.Business\ssttrek.Business.csproj", "{925CFB2E-3C37-475D-8422-F5A611CBCBEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ssttek.ContactService.Worker", "ssttek.ContactService\ssttek.ContactService.Worker.csproj", "{5D13DABE-72FE-47A1-8DCC-03B47FD678AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ssttek.Find.IP", "ssttek.Find.IP\ssttek.Find.IP.csproj", "{8ED348BB-4290-48B6-A792-71DCC6B9FD68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{925CFB2E-3C37-475D-8422-F5A611CBCBEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{925CFB2E-3C37-475D-8422-F5A611CBCBEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{925CFB2E-3C37-475D-8422-F5A611CBCBEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D13DABE-72FE-47A1-8DCC-03B47FD678AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D13DABE-72FE-47A1-8DCC-03B47FD678AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D13DABE-72FE-47A1-8DCC-03B47FD678AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D13DABE-72FE-47A1-8DCC-03B47FD678AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ED348BB-4290-48B6-A792-71DCC6B9FD68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ED348BB-4290-48B6-A792-71DCC6B9FD68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ED348BB-4290-48B6-A792-71DCC6B9FD68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ED348BB-4290-48B6-A792-71DCC6B9FD68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
