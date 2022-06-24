@@ -21,7 +21,6 @@ namespace ssttek.ContactService
     public class Worker : BackgroundService
     {
         private readonly ILogger<Worker> _logger;
-        private readonly SsttekContext ssttekContext;
         private readonly IServiceScopeFactory _serviceScopeFactory;
 
         public Worker(ILogger<Worker> logger, IServiceScopeFactory serviceScopeFactory)

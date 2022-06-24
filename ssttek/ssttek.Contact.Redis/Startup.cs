@@ -46,7 +46,10 @@ namespace ssttek.Contact.Redis
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ssttek.Contact.Redis", Version = "v1" });
             });
 
-          
+            services.AddStackExchangeRedisCache(action =>
+            {
+                action.Configuration = "localhost:6379";
+            });
 
         }
 
