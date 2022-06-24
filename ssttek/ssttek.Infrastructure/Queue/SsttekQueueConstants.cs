@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ssttek.Infrastructure.Queue
 {
-    public class SsttekConstants
+    public class SsttekQueueConstants
     {
         public const string RabbitMQHost = "localhost";
         public const string DefaultExchangeType = "direct";

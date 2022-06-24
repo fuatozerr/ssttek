@@ -23,7 +23,7 @@ namespace ssttek.Infrastructure.Queue
         }
         public static EventingBasicConsumer CreateBasicConsumer()
         {
-            var factory = new ConnectionFactory() { HostName = SsttekConstants.RabbitMQHost };
+            var factory = new ConnectionFactory() { HostName = SsttekQueueConstants.RabbitMQHost };
             var connection = factory.CreateConnection();
             var channel = connection.CreateModel();
             var result = new EventingBasicConsumer(channel);
@@ -37,7 +37,7 @@ namespace ssttek.Infrastructure.Queue
         /// <param name="exchangeName"></param>
         /// <param name="exchangeType"></param>
         /// <returns></returns>
-        public static EventingBasicConsumer EnsureExchange(this EventingBasicConsumer consumer, string exchangeName, string exchangeType = SsttekConstants.DefaultExchangeType)
+        public static EventingBasicConsumer EnsureExchange(this EventingBasicConsumer consumer, string exchangeName, string exchangeType = SsttekQueueConstants.DefaultExchangeType)
         {
             consumer.Model.ExchangeDeclare(exchangeName, exchangeType, durable: false, autoDelete: false);
 

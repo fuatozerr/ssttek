@@ -28,9 +28,9 @@ namespace ssttrek.Business.Concrete
 
         public void DeleteContact(int id)
         {
-            QueueFactory.SendMessageToExchange(exchangeName: SsttekConstants.ContactDeletingName,
-                exchangeType: SsttekConstants.DefaultExchangeType,
-                queueName: SsttekConstants.ContactDeletingQueueName,
+            QueueFactory.SendMessageToExchange(exchangeName: SsttekQueueConstants.ContactDeletingName,
+                exchangeType: SsttekQueueConstants.DefaultExchangeType,
+                queueName: SsttekQueueConstants.ContactDeletingQueueName,
                 obj: new //obje adi da verebilirdim. 
                 {
                     Id = id,
